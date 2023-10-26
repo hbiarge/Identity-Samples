@@ -1,0 +1,69 @@
+@Api_HostAddress = https://localhost:7052
+
+### Register
+# @name register
+POST {{Api_HostAddress}}/identity/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "hugo@acheve.es",
+  "password": "Patata.!123"
+}
+
+
+### Login
+# @name login
+POST {{Api_HostAddress}}/identity/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "hugo@acheve.es",
+  "password": "Patata.!123"
+}
+
+
+### Get Weather Forecast
+# @name get-weather-forecast
+
+@access_token={{login.response.body.accessToken}}
+@refresh_token={{login.response.body.refreshToken}}
+
+GET {{Api_HostAddress}}/weatherforecast/
+Accept: application/json
+Authorization: Bearer {{access_token}}
+
+### Manage info
+GET {{Api_HostAddress}}/identity/manage/info
+Accept: application/json
+Authorization: Bearer {{access_token}}
+
+### Confirm email
+POST {{Api_HostAddress}}/identity/resendConfirmationEmail
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "hugo@acheve.es"
+}
+
+### Forgot password
+POST {{Api_HostAddress}}/identity/forgotPassword
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "hugo@acheve.es"
+}
+
+### Reset password
+POST {{Api_HostAddress}}/identity/resetPassword
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "hugo@acheve.es",
+  "resetCode": "Q2ZESjhHMGNhVkpDTEVCTW50VWpsOFVyRmRKMHFwSFlqNkViamRhKzJUM3lxaWFsWlBwWlN0eFJjRFVueStuS25wZXVvbXZYTDh3b2hMZXdPSk9wcUgrQmdIY1NkcTJYRnp4STkvY25WSG51RGhhekRvSk95Yk1qVVBJbnNWQmhwV0JlZWRvT1ZhKy9ObU82YklScUFUUGZhdEpuVDQzR0ttbm0vUGJqQlFJSmZhQnJQOWJkUWQvT2F4NlZOY3c2d0V0Q2NMbVEveU5rak5aYTdFOU5ud0lkdHVBY3FTM2RtMDJDZXhSdlNHellVZlMx",
+  "newPassword": "Patata.!321"
+}
