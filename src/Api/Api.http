@@ -20,7 +20,7 @@ Accept: application/json
 
 {
   "email": "hugo@acheve.es",
-  "password": "Patata.!123"
+  "password": "Patata.!321"
 }
 
 
@@ -64,6 +64,6 @@ Accept: application/json
 
 {
   "email": "hugo@acheve.es",
-  "resetCode": "Q2ZESjhHMGNhVkpDTEVCTW50VWpsOFVyRmRKMHFwSFlqNkViamRhKzJUM3lxaWFsWlBwWlN0eFJjRFVueStuS25wZXVvbXZYTDh3b2hMZXdPSk9wcUgrQmdIY1NkcTJYRnp4STkvY25WSG51RGhhekRvSk95Yk1qVVBJbnNWQmhwV0JlZWRvT1ZhKy9ObU82YklScUFUUGZhdEpuVDQzR0ttbm0vUGJqQlFJSmZhQnJQOWJkUWQvT2F4NlZOY3c2d0V0Q2NMbVEveU5rak5aYTdFOU5ud0lkdHVBY3FTM2RtMDJDZXhSdlNHellVZlMx",
+  "resetCode": "Q2ZESjhHMGNhVkpDTEVCTW50VWpsOFVyRmRMeVpBZXhmSXB6QnRON2Q5Tk4rd2NZSEp2NEZQaUZpc0I5bUVxU0VEVndLOFlicERaVkhKN0h4VzBqMmVpQllGWXpOV2QyZ1pOd25hQ01WTkw4ODgzTWdCbzUyVHYzNGRseFhtcWFPY1B0UTM5TTAzV3FTUlJzWGkyWWdSOFVQUWlzRTBzTWF5OHkyZHZwYkNUK0pYck81aHFFME1Nc2VBZnFCdmg0aUVIV1k3d1ZKei96b1VQMDZHS3gyb1Q4OTRBRW5McGhGS216bE16S1V2QTFCampZ",
   "newPassword": "Patata.!321"
 }
